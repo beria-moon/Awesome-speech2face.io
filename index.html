@@ -79,16 +79,15 @@ Furthermore, we tackle the challenge posed by excessive diversity in the synthes
 
             <br></br>
             <figure>
-              <p align="center"><img src="Fig2.png" width="100%" class="center" /></p>
+              <p align="center"><img src="https://github.com/beria-moon/speech2face.io/Fig2.png" width="100%" class="center" /></p>
               <figcaption>
                 <p style="text-align: justify;">
-                  <font color="061E61"><b>Figure 1:</b> Overview of AudioLDM design for text-to-audio generation (left),
-                    and text-guided audio manipulation (right).
-                    During training, latent diffusion models (LDMs) are conditioned on audio embedding and trained in a
-                    continuous space learned by VAE.
-                    The sampling process uses text embedding as the condition. Given pretrained LDMs, the zero-shot
-                    audio inpainting and style transfer are realized in the reverse process.
-                    The block Forward Diffusion denotes the process that corrupt data with gaussian noise.
+                  <font color="061E61"><b>Figure 1:</b> Details of the diffusion-based Speech-to-Face generation pipeline. 
+                    It consists of two stages: (1) Collaborative Pre-training with Contrastive Learning. The speech encoder
+                    and face encoder take the audio and face image as input, respectively, 
+                    to learn the representations, the captured embedding of face and speech are aligned by contrastive learning. 
+                    (2) SCLDM. The aligned face embedding is gradually destroyed by Gaussian noise in the diffusion process within iterative time steps. Then it is combined with common face stuff provided by face prior and fed into LDM for face generation. The aligned speech embedding 
+                    is utilized as conditioned variation to manipulate the face generation in the training process of LDM.
                 </p>
               </figcaption>
             </figure>
