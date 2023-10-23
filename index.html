@@ -849,66 +849,78 @@ Furthermore, we tackle the challenge posed by excessive diversity in the synthes
             
 
             <p><b>
-                <font color="061E61">Generation from Audio Clips from Different Videos.:</font>
+                <font color="061E61">Generation from Audio Clips from Different Videos.</font>
               </b></p>
 
             <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
               <thead>
                 <tr>
                   <th scope="col" width="33%">
-                    <font color="061E61">Human Question to ChatGPT</font>
+                    <font color="061E61">Video 1</font>
                   </th>
                   <th scope="col" width="33%">
-                    <font color="061E61">Simplified ChatGPT Answer</font>
+                    <font color="061E61">Video 2</font>
                   </th>
                   <th scope="col" width="33%">
-                    <font color="061E61">AudioLDM</font>
+                    <font color="061E61">Video 3</font>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Describe the sound of the outer space</th>
-                  <td>Radio emissions from stars, planets, galaxies and other celestial bodies, high fidelity, as well
-                    as the sounds of solar winds and cosmic rays.</td>
-                  <td><audio controls="controls">
-                      <source
-                        src="samples/1_text2audio/1_machinetextprompt/long_audio/Radio emissions from stars, planets, galaxies and other celestial bodies, high fidelity,, as well as the sounds of solar winds and cosmic rays.wav"
-                        autoplay />Your browser does not support the audio element.
-                    </audio></td>
-                </tr>
-                <tr>
-                  <td>Describe what does a dance music sound with at most 30 words</th>
-                  <td>Dance music with strong, upbeat tempo, and repetitive rhythms, include sub-genres like house,
-                    techno, EDM, trance, and many more.</td>
-                  <td><audio controls="controls">
-                      <source
-                        src="samples/1_text2audio/1_machinetextprompt/long_audio/Dance music with strong, upbeat tempo, and repetitive rhythms, include sub-genres like house, techno, EDM, trance, and many more.wav"
-                        autoplay />Your browser does not support the audio element.
-                    </audio></td>
-                </tr>
-                <tr>
-                  <td>Describe the sound of the factory</th>
-                  <td>Loud and chaotic. Hum and buzz of machinery such as power tools, high fidelity. Clanking and
-                    clattering of metal parts, the whirring of motors and engines, and the beeping and alarms of various
-                    instruments.</td>
-                  <td><audio controls="controls">
-                      <source
-                        src="samples/1_text2audio/1_machinetextprompt/long_audio/Loud and chaotic. Hum and buzz of machinery such as power tools, high fidelity. Clanking and clattering of metal parts, the whirring of motors and engines, and the beeping and alarms of various instruments.wav"
-                        autoplay />Your browser does not support the audio element.
-                    </audio></td>
-                </tr>
-                <tr>
-                  <td>Describe what does a scary music sound with at most 30 words</th>
-                  <td>Scary music with dissonant harmonies, irregular rhythms, and unconventional use of instruments.
-                  </td>
-                  <td><audio controls="controls">
-                      <source
-                        src="samples/1_text2audio/1_machinetextprompt/long_audio/Scary music with dissonant harmonies, irregular rhythms, and unconventional use of instruments.wav"
-                        autoplay />Your browser does not support the audio element.
-                    </audio></td>
+                  <td scope="row"><video controls="controls">
+                    <source src="./generation_consistency/gMrUJdcUSSk.webm" type="video/webm">
+                    </video></td>
+                  <td scope="row"><video controls="controls">
+                    <source src="./generation_consistency/2bRvXhyjL2c.webm" type="video/webm">
+                    </video></td>
+                  <td scope="row"><video controls="controls">
+                    <source src="./generation_consistency/CK7uJsSK6io.webm" type="video/webm">
+                    </video></td>
                 </tr>
               </tbody>
+              <thead>
+                <tr>
+                  <th scope="col" width="33%">
+                    <font color="061E61">Face clip in video 1.</font>
+                  </th>
+                  <th scope="col" width="33%">
+                    <font color="061E61">Face clip in video 2.</font>
+                  </th>
+                  <th scope="col" width="33%">
+                    <font color="061E61">Face clip in video 3.</font>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                   <td scope="col" width="33%"><img src="./generation_consistency/gMrUJdcUSSk.png" ></td>
+                   <td scope="col" width="33%"><img src="./generation_consistency/2bRvXhyjL2c.png" ></td>
+                   <td scope="col" width="33%"><img src="./generation_consistency/CK7uJsSK6io.png" ></td> 
+                </tr>
+              </tbody>
+              <thread>
+                  <tr>
+                  <td scope="col" width="33%">
+                    <font color="006666">Generation</font>
+                  </td>
+                  <td scope="col" width="33%">
+                    <font color="006666">Generation</font>
+                  </td>
+                  <td scope="col" width="33%">
+                    <font color="006666">Generation</font>
+                  </td>
+                </tr>
+              </thread>
+
+              <tbody>
+                <tr>
+                   <td scope="col" width="33%"><img src="./generation_consistency/gMrUJdcUSSk_g.png" ></td>
+                   <td scope="col" width="33%"><img src="./generation_consistency/2bRvXhyjL2c_g.png" ></td>
+                   <td scope="col" width="33%"><img src="./generation_consistency/CK7uJsSK6io_g.png" ></td> 
+                </tr>
+              </tbody>
+
             </table>
 
 
