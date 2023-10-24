@@ -57,9 +57,9 @@
               <font color="000093">Abstract</font>
             </h2>
             <p style="text-align: justify;">
-              <font color="061E61">  Speech-to-face generation is an intriguing area of research that focuses on generating realistic facial images based on a speaker’s audio speech. However, state-of-the-art methods employing GAN-based architectures lack stability and cannot generate realistic face images.
-To fill this gap, we propose a novel speech-to-face generation framework, which leverages a Speech-Conditioned Latent Diffusion Model, called SCLDM. To the best of our knowledge, this is the first work to harness the exceptional modeling capabilities of diffusion models for speech-to-face generation.
-Preserving the shared identity information between speech and face is crucial in generating realistic results. Therefore, we employ contrastive pre-training for both the speech encoder and the face encoder. This pre-training strategy facilitates effective alignment between the attributes of speech, such as age and gender, and the corresponding facial characteristics in the face images.
+              <font color="061E61"> Diffusion models have made astonishing achievement in various generation tasks. However, there is no work to utilize diffusion models
+                in speech-to-face generation. In this work, we propose SCLDM, Speech-Conditioned Latent Diffusion Model, a novel method that harnesses the exceptional modeling capabilities of diffusion models for speech-to-face generation.
+Preserving the shared identity information between speech and face is crucial in generating realistic results.Therefore, we employ contrastive pre-training for both the speech encoder and the face encoder. This pre-training strategy facilitates effective alignment between the attributes of speech, such as age and gender, and the corresponding facial characteristics in the face images.
 Furthermore, we tackle the challenge posed by excessive diversity in the synthesis process caused by the diffusion model. To overcome this challenge, we introduce the concept of residuals by integrating a statistical face prior to the diffusion process. This addition helps to eliminate the shared component across the faces and enhances the subtle variations captured by the speech condition. </font>
             </p>
 
