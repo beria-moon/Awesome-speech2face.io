@@ -11,6 +11,6 @@
 [3] We introduce a novel sample adaptive face reference into LDM to alleviate its noise sensitivity and generate a realistic face image that conforms to the corresponding speech.
 
 ## Method
-
+![Alt Text](Fig2.png)
 
 
