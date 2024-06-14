@@ -41,10 +41,9 @@
               <font color="000093">Abstract</font>
             </h2>
             <p style="text-align: justify;">
-              <font color="061E61"> Diffusion models have made astonishing achievement in various generation tasks. However, there is no work to utilize diffusion models
-                in speech-to-face generation. In this work, we propose SCLDM, Speech-Conditioned Latent Diffusion Model, a novel method that harnesses the exceptional modeling capabilities of diffusion models for speech-to-face generation.
-Preserving the shared identity information between speech and face is crucial in generating realistic results.Therefore, we employ contrastive pre-training for both the speech encoder and the face encoder.
-Furthermore, we tackle the challenge posed by excessive diversity in the synthesis process caused by the diffusion model. To overcome this challenge, we introduce the concept of residuals by integrating a statistical face prior to the diffusion process. 
+              <font color="061E61"> Our work introduces SCFP, a Speech-Conditioned Facial Portrait Generation model, tackling the complex task of creating personalized portraits matching given speech inputs.
+                To allevate the challenge of output diversity of LDM, SCFP incorporates a tailored Face Prior to guide the generation and employs a sample-specific weighting strategy to enhance speaker discriminability by capturing subtel facial variations contained in speech.
+                And a ConRe pre-training strategy is adopted to jointly learn aligned speech-face representations and refine detailed facial features.
                </font>
             </p>
 
