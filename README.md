@@ -11,6 +11,6 @@
 [3] We introduce a pre-training procedure that combines contrastive learning with face reconstruction, which aims to align speech and face representations while simultaneously reconstructing facial structures.
 
 ## Method
-![Alt Text](Fig2.png)
+![Alt Text](figure_overview.png)
 
 
